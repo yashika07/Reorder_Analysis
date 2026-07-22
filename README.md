@@ -7,6 +7,8 @@ This project analyzes customer reorder behavior across regions using a real-worl
 
 The Online Retail II dataset (UCI Machine Learning Repository, via Kaggle) contains ~1 million real transaction line items from a UK-based, non-store online retailer selling all-occasion giftware, covering December 2009 to December 2011. Each row represents one product within an order, and includes the invoice number, product details, quantity, price, order date, customer ID, and the customer's country. The dataset is heavily UK-weighted (~92% of orders), with the remainder spread across EU countries and the rest of the world — a realistic imbalance that this project works with rather than around.
 
+Link to Dataset : https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci
+
 ## Why this project
 
 Businesses with customers spread across regions often struggle to get a unified, reliable view of behavior — data may sit in separate regional systems, contain duplicates or gaps, and need cleaning before it's trustworthy enough to analyze. This project works through that full cycle end-to-end: starting from raw, imperfect data, through cleaning and consolidation, to a concrete business question — do customers in different regions reorder at different rates? — answered with statistical rigor and communicated through a dashboard a non-technical stakeholder could act on.
