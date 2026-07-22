@@ -18,9 +18,13 @@ Businesses with customers spread across regions often struggle to get a unified,
 * SQL Analysis (SQLite): Uses window functions (LAG() with PARTITION BY) to calculate the time gap between each customer's consecutive orders, then aggregates this by region to compare reorder behavior.
 * BI Dashboard (Power BI): Visualizes the findings through KPI summary cards, a regional comparison bar chart, a detailed data table, and time-series trend lines (including a zoomed-in view for smaller regions whose patterns were otherwise masked by UK's dominant order volume).
 
+## Dashboard
+![Dashboard screenshot](dashboard_report.PNG)
+
 ## Key finding
 
-Customers in the "Others" region (outside UK/EU) reordered roughly 34% faster than UK or EU customers (~34.7 days vs. ~52.4 / ~50.4 days average gap between orders). UK and EU customers showed very similar reorder cycles to each other.
+Customers in the "Others" region (outside UK/EU) reordered roughly 34% faster than UK or EU customers (~34.7 days vs. ~52.4 / ~50.4 days average gap between orders). 
+UK and EU customers showed very similar reorder cycles to each other.
 
 ### Caveat: 
 the "Others" and "EU" segments have notably smaller sample sizes (1,067 and 1,833 reorder events respectively) than UK (28,194), since the source dataset is predominantly UK-based. This finding is directionally useful but would benefit from a larger, more balanced dataset to confirm with full confidence.
